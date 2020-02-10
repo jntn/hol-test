@@ -1,4 +1,4 @@
-service: hol-test
+service: website
 
 provider:
   name: aws
