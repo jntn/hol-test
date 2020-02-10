@@ -1,5 +1,2 @@
-before_build:
-  - npm run build
-
 after_deploy:
-  - serverless client deploy --stage $SEED_STAGE_NAME
+  - npm run build && serverless client deploy --no-confirm --stage $SEED_STAGE_NAME
