@@ -1,0 +1,19 @@
+service: hol-test
+app: hol-test
+org: jgranqvist
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: eu-central-1
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: house-of-lola-test2
+    distributionFolder: build
+    indexDocument: index.html
+    errorDocument: index.html
