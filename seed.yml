@@ -1,4 +1,2 @@
 after_deploy:
-  - if [ $SEED_SERVICE_NAME = "hol-test" ]; then cd /tmp/seed/source/packages/website; fi
-  - if [ $SEED_SERVICE_NAME = "hol-test" ]; then npm run build; fi
-  - if [ $SEED_SERVICE_NAME = "hol-test" ]; then serverless client deploy --no-confirm; fi
+  - if [ $SEED_SERVICE_NAME = "hol-test" ]; then cd /tmp/seed/source/packages/website && npm run build && serverless client deploy --no-confirm; fi
