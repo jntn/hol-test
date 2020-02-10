@@ -1,6 +1,4 @@
 service: hol-test
-app: hol-test
-org: jgranqvist
 
 provider:
   name: aws
