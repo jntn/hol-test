@@ -30,3 +30,10 @@ functions:
       - http:
           path: hello
           method: get
+
+  lol:
+    handler: handler.lol
+    events:
+      - http:
+          path: lol
+          method: get
